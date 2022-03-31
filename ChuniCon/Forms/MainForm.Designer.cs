@@ -53,6 +53,7 @@
             this.NormalBox = new System.Windows.Forms.RadioButton();
             this.DriverBox = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.GithubLink = new System.Windows.Forms.LinkLabel();
             this.KeyPairList = new ChuniCon.Components.DoubleBufferListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -291,6 +292,17 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "键盘模拟类型: ";
             // 
+            // GithubLink
+            // 
+            this.GithubLink.AutoSize = true;
+            this.GithubLink.Location = new System.Drawing.Point(317, 482);
+            this.GithubLink.Name = "GithubLink";
+            this.GithubLink.Size = new System.Drawing.Size(215, 12);
+            this.GithubLink.TabIndex = 7;
+            this.GithubLink.TabStop = true;
+            this.GithubLink.Text = "https://github.com/MoeGrid/ChuniCon";
+            this.GithubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GithubLink_LinkClicked);
+            // 
             // KeyPairList
             // 
             this.KeyPairList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -355,7 +367,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 489);
+            this.ClientSize = new System.Drawing.Size(552, 508);
+            this.Controls.Add(this.GithubLink);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DriverBox);
             this.Controls.Add(this.NormalBox);
@@ -420,6 +433,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ToolStripMenuItem ModifyPressColor;
+        private System.Windows.Forms.LinkLabel GithubLink;
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -47,6 +48,8 @@ namespace ChuniCon.Forms
             RefreshColorThread.IsBackground = true;
             RefreshColorThread.Start();
         }
+
+        #region 事件
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -319,7 +322,14 @@ namespace ChuniCon.Forms
             }
         }
 
-        ////////////////////////////////////////////////////////////////////////////////////
+        private void GithubLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/MoeGrid/ChuniCon");
+        }
+
+        #endregion
+
+        #region 其他函数
 
         /// <summary>
         /// 载入预设
@@ -529,5 +539,6 @@ namespace ChuniCon.Forms
             return false;
         }
 
+        #endregion
     }
 }
