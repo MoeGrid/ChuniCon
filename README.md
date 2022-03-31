@@ -21,3 +21,8 @@
 目前程序自带的DLL为某手乐的
 
 ### 这个工具还有好多不足，但是我时间有限，欢迎大家提PR一起完善
+
+### 最后放两张图
+
+![ChuniCon1](https://user-images.githubusercontent.com/8309713/160971255-b9dc08ea-abc0-4cc6-83f1-3d3903e027b5.png)
+![ChuniCon2](https://user-images.githubusercontent.com/8309713/160971261-f9b241ad-2c26-4af6-adb2-6f1f3aa2719e.png)
