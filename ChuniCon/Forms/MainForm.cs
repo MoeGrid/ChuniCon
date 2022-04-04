@@ -28,6 +28,12 @@ namespace ChuniCon.Forms
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        #region 事件
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
             // 初始化ChuniIO
             int status = ChuniIO.ChuniIoJvsInit();
             if (status != 0)
@@ -47,13 +53,9 @@ namespace ChuniCon.Forms
             RefreshColorThread = new Thread(RefreshColor);
             RefreshColorThread.IsBackground = true;
             RefreshColorThread.Start();
-        }
-
-        #region 事件
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
+            // 加载预设
             LoadPreset();
+            // 触摸回调
             ChuniIO.ChuniIoSliderStart(SliderCallback);
         }
 

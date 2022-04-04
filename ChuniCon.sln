@@ -7,12 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuniCon", "ChuniCon\ChuniC
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7C1D64-64BC-415C-9264-80816680188E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AE7C1D64-64BC-415C-9264-80816680188E}.Debug|Any CPU.Build.0 = Debug|x86
 		{AE7C1D64-64BC-415C-9264-80816680188E}.Debug|x86.ActiveCfg = Debug|x86
 		{AE7C1D64-64BC-415C-9264-80816680188E}.Debug|x86.Build.0 = Debug|x86
+		{AE7C1D64-64BC-415C-9264-80816680188E}.Release|Any CPU.ActiveCfg = Release|x86
+		{AE7C1D64-64BC-415C-9264-80816680188E}.Release|Any CPU.Build.0 = Release|x86
 		{AE7C1D64-64BC-415C-9264-80816680188E}.Release|x86.ActiveCfg = Release|x86
 		{AE7C1D64-64BC-415C-9264-80816680188E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
